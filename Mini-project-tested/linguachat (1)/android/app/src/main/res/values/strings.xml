@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LinguaChat</string>
+    <string name="title_activity_main">LinguaChat</string>
+    <string name="package_name">com.linguachat.app</string>
+    <string name="custom_url_scheme">com.linguachat.app</string>
+</resources>
