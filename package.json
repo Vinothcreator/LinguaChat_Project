@@ -1,0 +1,9 @@
+{
+  "name": "linguachat-project-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd \"Mini-project-tested/linguachat (1)\" && npm install && npm run build",
+    "start": "cd \"Mini-project-tested/linguachat (1)\" && npm run start"
+  }
+}

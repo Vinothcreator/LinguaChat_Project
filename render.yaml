@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: linguachat
+    env: node
+    plan: free
+    region: oregon
+    rootDir: Mini-project-tested/linguachat (1)
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRY
+        value: 7d
+      - key: CLIENT_URL
+        value: https://linguachat.onrender.com
+      - key: CORS_ORIGIN
+        value: https://linguachat.onrender.com
+      - key: MONGODB_URI
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
